@@ -3,7 +3,7 @@
 # https://github.com/robbyrussell/oh-my-zsh
 
 # install vim package
-sudo apt install -y vim vim-gtk
+sudo apt install -y vim vim-gtk cmake python
 
 # configure vim plugins and syntax
 cat << EOF >> ~/.vimrc
@@ -53,4 +53,5 @@ EOF
 
 # install plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+python ~/.vim/bundle/YouCompleteMe/install.py
 vim +PluginInstall +qall
