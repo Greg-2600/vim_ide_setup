@@ -1,9 +1,6 @@
 #!/bin/bash
 # gregbakerstl development environment setup
 
-# i recommend using oh my zsh as well:
-# https://github.com/robbyrussell/oh-my-zsh
-
 # linux package list
 apt_packages='vim vim-gtk cmake python build-essential zsh'
 
