@@ -1,2 +1,2 @@
 # vim_ide_setup
-install and configure vim for software development
+gregbakerstl's favorite small development environment installation process
