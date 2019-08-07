@@ -3,7 +3,7 @@
 # https://github.com/robbyrussell/oh-my-zsh
 
 # install vim package
-sudo apt install -y vim
+sudo apt install -y vim vim-gtk
 
 # configure vim plugins and syntax
 cat << EOF >> ~/.vimrc
