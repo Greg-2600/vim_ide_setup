@@ -16,6 +16,7 @@ done
 vim_config=vimrc
 cat ${vim_config} >> ~/.vimrc
 
+# arbitraty comment
 # pull down vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
