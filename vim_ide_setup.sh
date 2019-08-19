@@ -23,4 +23,4 @@ python ~/.vim/bundle/YouCompleteMe/install.py
 vim +PluginInstall +qall
 
 # install oh my zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+echo "y"|sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
