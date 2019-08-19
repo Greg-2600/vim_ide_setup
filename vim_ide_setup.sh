@@ -2,7 +2,7 @@
 # gregbakerstl development environment setup
 
 # linux package list
-apt_packages='vim vim-gtk cmake ipython-dev python build-essential zsh'
+apt_packages='vim vim-gtk cmake python-dev python build-essential zsh'
 
 # install linux dev packages
 for package in $apt_packages; do
