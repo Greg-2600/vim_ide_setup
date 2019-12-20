@@ -2,11 +2,11 @@
 # gregbakerstl development environment setup
 
 # linux package list
-apt_packages='vim vim-gtk cmake python-dev python build-essential zsh'
+apt_packages='vim vim-gtk cmake python-dev python build-essential zsh shellcheck'
 
 # install linux dev packages
 for package in $apt_packages; do
-	sudo apt install -y $package
+	sudo apt install -y "$package"
 done
 
 # configure vim plugins and syntax highlighting
