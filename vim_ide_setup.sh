@@ -3,13 +3,15 @@
 
 install_packages() {
 	# linux package list
-	apt_packages='vim
+	apt_packages='git
+		      vim
 		      vim-gtk
 		      cmake
-		      python 
-		      python-dev
+		      python3
+		      python3-dev
 		      build-essential
 		      zsh
+		      curl
 		      shellcheck'
 
 	# install linux dev packages
@@ -24,16 +26,21 @@ configure_vim() {
 	vim_config=vimrc
 	cat ${vim_config} >> ~/.vimrc
 
-	# pull down vundle
+	# idempotently pull down vundle
+	location="$HOME/.vim/bundle/Vundle.vim"
+	if [ -d "{$location}" ]; then 
+		rm -rf "${location}"; 
+	fi
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-	# compile YouCompleteMe
-	cd ~/.vim/bundle/YouCompleteMe || exit
-	./install.py
-	cd || exit
 
 	# compile and install plugins for vim
 	vim +PluginInstall +qall
+
+	# compile YouCompleteMe
+	cd ~/.vim/bundle/YouCompleteMe/ || exit
+	./install.py --clang-completer
+	cd || exit
 
 }
 
