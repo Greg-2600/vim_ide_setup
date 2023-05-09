@@ -12,7 +12,12 @@ install_packages() {
 		      build-essential
 		      zsh
 		      curl
-		      shellcheck'
+		      shellcheck
+		      tcptraceroute
+		      mtr
+		      nmap
+		      nc
+		      traceroute'
 
 	# install linux dev packages
 	for package in $apt_packages; do
