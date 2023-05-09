@@ -1,5 +1,5 @@
 # vim_ide_setup
-gregbakerstl's favorite small development environment installation process
+greg's favorite small development environment installation process
 
 Idempotent Usage:
 
