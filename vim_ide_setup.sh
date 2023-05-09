@@ -16,8 +16,17 @@ install_packages() {
 		      tcptraceroute
 		      mtr
 		      nmap
-		      nc
-		      traceroute'
+		      netcat
+		      socat
+		      tree
+		      kismet
+		      ettercap-graphical
+		      inetutils-traceroute
+		      nmon
+		      htop
+		      ethtool
+		      john
+		      iperf'
 
 	# install linux dev packages
 	for package in $apt_packages; do
