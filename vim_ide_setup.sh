@@ -19,7 +19,6 @@ install_packages() {
 		      netcat
 		      socat
 		      tree
-		      kismet
 		      ettercap-graphical
 		      inetutils-traceroute
 		      nmon
