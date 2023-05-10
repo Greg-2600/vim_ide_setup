@@ -23,6 +23,8 @@ install_packages() {
 		      ettercap-graphical
 		      inetutils-traceroute
 		      nmon
+		      nethogs
+		      iotop
 		      htop
 		      ethtool
 		      john
