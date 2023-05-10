@@ -6,6 +6,7 @@ install_packages() {
 	apt_packages='git
 		      vim
 		      vim-gtk
+		      screen
 		      cmake
 		      python3
 		      python3-dev
