@@ -19,7 +19,7 @@ install_packages() {
 		      nmap
 		      netcat
 		      socat
-		      nettools
+		      net-tools
 		      tree
 		      ettercap-graphical
 		      inetutils-traceroute
